@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TinDog</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- CSS Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/8a7e01d09e.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+  <!---  NAVBAR  --->
+  <nav class="navbar navbar-expand-lg fixed-top navcol">   <!-- H fixed-top (bootstrap class) κρατάει την navbar στο top όσο scrollarw. Η κλάση navcol είναι δική μου -->
+    <div class="container">
+      <a class="navbar-brand">Tindog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto fw-bold">    <!-- Η ms-auto (margin start-auto) ορίζει αυτόματα το margin από το start του element (πάει τα links στο τ΄έλος της navbar)-->
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Αρχική</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Χαρακτηριστικά</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Αξιολογήσεις</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Τιμές</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#download">Download</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Επικοινωνία</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!---  ΑΡΧΙΚΗ  --->
+  <section id="home">
+    <div class="row">
+      <div class="col-lg-6">
+        <h1 class="start-title">Η no1 εφαρμογή γνωριμιών και ζευγαρώματος με νέα και όμορφα σκυλάκια κοντά στη περιοχή σου</h1>   <!-- Η κλάση start-title΄ είναι δική μου-->
+      </div>
+      <div class="col-lg-6 base-icon">    <!-- Την base-icon κλάση την όρισα με σκοπό να θέσω relative position για την κλάση col. Στην Bootstrap 4 ήταν by default relative-->
+        <img class="title-image" src="images/iphone.png">     <!-- Η κλάση title-image είναι δική μου -->
+      </div>
+    </div>
+  </section>
+
+
+  <!---  ΧΑΡΑΚΤΗΡΙΣΤΙΚΑ  --->
+  <section id="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 feature">     <!-- Η κλάση feature είναι δική μου-->
+          <i class="fa-solid fa-circle-check fontawesome-icon"></i>
+          <h3>Εύκολη στη χρήση</h3>
+          <p class="feature-p">Είναι τόσο εύχρηστη που ακόμα και το σκυλάκι σου θα μπορούσε να την χρησιμοποιήσει</p>    <!-- H κλάση feature-p είναι δική μου-->
+        </div>
+        <div class="col-lg-4 feature">
+          <i class="fa-solid fa-bullseye fontawesome-icon"></i>
+          <h3>Ελιτ κατηγορίες</h3>
+          <p class="feature-p">Έχουμε όλα τα σκυλιά, τα καλύτερα σκυλιά</p>
+        </div>
+        <div class="col-lg-4 feature">
+          <i class="fa-solid fa-heart fontawesome-icon"></i>
+          <h3>Εγγυημένο αποτέλεσμα</h3>
+          <p class="feature-p">Βρες το ζευγάρι του σκυλιού σου ή επιστροφή χρημάτων</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 feature">
+          <i class="fa-solid fa-euro-sign fontawesome-icon"></i>
+          <h3>Οικονομικές τιμές</h3>
+          <p class="feature-p">Έχουμε τις καλύτερες τιμές. Ψάξτε το και θα δείτε</p>
+        </div>
+        <div class="col-lg-4 feature">
+          <i class="fa-solid fa-suitcase-medical fontawesome-icon"></i>
+          <h3>Ιατρικός έλεγχος</h3>
+          <p class="feature-p">Παραδίδονται πιστοποιητικά υγείας. Δεν υπάρχει κίνδυνος μόλυνσης</p>
+        </div>
+        <div class="col-lg-4 feature">
+          <i class="fa-solid fa-handshake-simple fontawesome-icon"></i>
+          <h3>Ταχύτατη γνωριμία</h3>
+          <p class="feature-p">Πραγματοποιείται άμεση γνωριμία (εντός 2 ημερών)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!---  ΑΞΙΟΛΟΓΗΣΕΙΣ  --->
+  <section id="testimonials">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">    <!-- Η κλάση 'container-fluid' αποσκοπεί σε refactoring -->
+          <h2 class="testimonial-text">Δεν χρειάζεται πλεον να ψάχνω από δω και απο κει για ζευγάρωμα. Έχω βρει την τέλεια σκυλίτσα στο TinDog. Woof</h2>   <!-- Η κλάση testimonial-text είναι δική μου -->
+          <img class="testimonial-image" src="images/dog-img.jpg">    <!-- H κλάση testimonial-image είναι δική μου -->
+          <em>Αζορ, Θεσσαλονίκη</em>
+        </div>
+        <div class="carousel-item container-fluid">    <!-- Η κλάση 'container-fluid' αποσκοπεί σε refactoring -->
+          <h2 class="testimonial-text">Το σκυλάκι μου συνήθιζε να είναι πολύ μόνο, αλλά με την βοήθεια του TinDog, το ζευγάρι βρήκε τον έρωτα της ζωής του</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg">
+          <em>Μαρία, Αθήνα</em>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+
+  <!---  ΤΙΜΕΣ  --->
+  <section id="pricing">
+    <h2 class="pricing-text">Τιμές για όλες τις τσέπες</h2>
+    <p>Τιμές ικανοποιητικές για εσάς και το σκυλάκι σας</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 pricing-col">    <!-- Η κλάση 'pricing-col' είναι δική μου-->
+          <div class="card">     <!-- H card είναι κλάση της Bootstrap -->
+            <div class="card-header">   <!-- H card-header είναι κλάση της Bootstrap -->
+              <h3>Chihuahua</h3>
+            </div>
+            <div class="card-body">   <!-- H card-body είναι κλάση της Bootstrap-->
+              <h2 class="pricing-text">Δωρεάν</h2>
+              <p>5 ταιριάσματα την ημέρα</p>
+              <p>10 μηνύματα την ημέρα</p>
+              <p>Απεριόριστη χρήση της εφαρμογής</p>
+              <div class="d-grid gap-2">    <!-- Έτοιμο κουμπί της Bootstrap -->
+                <button class="btn btn-dark" type="button">Εγγραφή</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" col-lg-4 col-md-6 pricing-col">
+          <div class="card">
+            <div class="card-header">
+              <h3>Labrador</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="pricing-text">15<i class="fa-solid fa-euro-sign"></i>/μήνα</h2>
+              <p>Απεριόριστα ταιριάσματα</p>
+              <p>Απεριόριστα μηνύματα</p>
+              <p>Απεριόριστη χρήση της εφαρμογής</p>
+              <div class="d-grid gap-2">
+                <button class="btn btn-dark" type="button">Εγγραφή</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 pricing-col">
+          <div class="card">
+            <div class="card-header">
+              <h3>Mastiff</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="pricing-text">30<i class="fa-solid fa-euro-sign"></i>/μήνα</h2>
+              <p>Λίστα προτεραιότητας</p>
+              <p>Απεριόριστα ταιριάσματα</p>
+              <p>Απεριόριστα μηνύματα</p>
+              <p>Απεριόριστη χρήση της εφαρμογής</p>
+              <div class="d-grid gap-2">
+                <button class="btn btn-dark" type="button">Εγγραφή</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!---  DOWNLOAD  --->
+  <section id="download">
+    <div class="container-fluid">    <!-- Η κλάση 'container-fluid' αποσκοπεί σε refactoring -->
+      <h3 class="last-p">Βρες σήμερα την πραγματική αγάπη για το σκυλάκι σου</h3>
+      <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i> Λήψη στο App Store</button>   <!-- H download-button΄ είναι δική μου κλάση -->
+      <button type="button" class="btn btn-light btn-lg download-button"><i class="fa-brands fa-google-play"></i> Αποκτήστε την στο Google Play </button>
+    </div>
+  </section>
+
+
+  <!---  FOOTER  --->
+  <footer id="footer">
+    <div class="contact">
+      <i class="fa-brands fa-twitter twit"></i>
+      <i class="fa-brands fa-facebook fb"></i>
+      <i class="fa-brands fa-instagram insta"></i>
+      <i class="fa-solid fa-envelope email"></i>
+      <p> Copyright © 2021-2022</p>
+    </div>
+  </footer>
+</body>
+</html>

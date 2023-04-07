@@ -1,0 +1,214 @@
+body
+{
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+
+ /*------------------------------------NAVBAR-----------------------------------*/
+.navbar-brand
+{
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.navcol
+{
+  padding: 0;
+  background-color: #CF0A0A;
+}
+.nav-link
+{
+  font-size: 1.1rem;
+  font-family: "Verdana";
+}
+
+
+ /*-----------------------------------ΑΡΧΙΚH-----------------------------------*/
+#home
+{
+  background-color: #CF0A0A;
+  color: #fff;
+  padding: 200px 150px 0;
+  min-height: 100vh;        /*Το home section καλύπτει το 100% του vieport*/
+}
+.start-title
+{
+  padding-right: 30px;
+  font-size: 3.3rem;
+  line-height: 1.8;
+  text-align: left;
+}
+/* Μια επιπλέον δική μου προσθήκη, ώστε η  class="col" να έχει position: relative για την BOOTSTRAP 5,
+  άρα να ορίζεται ως parent. Στην Bootstrap 4 ήταν by default relative.*/
+.base-icon
+{
+  position: relative;
+}
+.title-image
+{
+  width: 55%;
+  transform: rotate(20deg);
+  /*Η εικόνα (child του col) δεν θεωρείται πλέον κομμάτι του αρχικού τμήματος, οπότε δεν καθορίζει και τις διαστάσεις του.
+   Επομένως μικραίνει το αρχικό τμήμα, καθώς η εικόνα ήταν αυτή που το μεγάλωνε, και το features τμήμα ανεβαίνει πιο πάνω*/
+  position: absolute;
+  right: 25%;     /*Χρησιμοποιώ right λόγω position*/
+}
+
+
+/*--------------------------------ΧΑΡΑΚΤΗΡΙΣΤΙΚΑ--------------------------------*/
+#features
+{
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;    /* Τa στοιχείa εντός του features section γίνονται παιδιά του (flex-items) και οργανώνονται κατά μήκος μιας γραμμής (οριζόντιας ή κάθετης)*/
+  justify-content: center;
+  align-items: center;
+  position: relative;      /*Είναι απαραίτητο για να λειτουργήσει το z-index */
+  z-index: 1;     /*Το άσπρο χρώμα θα είναι το πάνω-πάνω στρώμα, οπότε το κομμάτι της εικόνας που περνάει στο features section δεν θα φαίνεται σε αυτό*/
+}
+.feature-p
+{
+  color: grey;
+  width: 70%;
+  margin: auto;
+}
+.fontawesome-icon
+{
+  color: #ED240C;
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+}
+.fontawesome-icon:hover
+{
+  color: blue;
+}
+
+
+/*--------------------------------ΑΞΙΟΛΟΓΗΣΕΙΣ---------------------------------*/
+#testimonials
+{
+  min-height: 100vh;
+  background-color: #CF0A0A;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.testimonial-text
+{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.testimonial-image
+{
+  width: 12%;
+  border-radius: 100%;    /* Κάνει κυκλική την εικόνα */
+  margin: 20px;
+}
+
+
+/*------------------------------------ΤΙΜΕΣ------------------------------------*/
+#pricing
+{
+  background-color: #fff;
+  min-height: 100vh;
+  padding: 100px;
+}
+.pricing-col
+{
+  padding: 2% 3%;    /* Για αποστάσεις κάθε κάρτας*/
+}
+#pricing h3
+{
+  font-weight: 900;
+}
+#pricing p
+{
+  font-size: 20px;
+}
+.pricing-text
+{
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+
+/*----------------------------------DOWNLOAD----------------------------------*/
+#download
+{
+  min-height: 80vh;
+  background-color: #CF0A0A;
+  color: #fff;
+}
+.last-p
+{
+  color: #fff;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+.download-button
+{
+  margin: 5% 3% 5% 0;
+}
+
+
+/*--------------------------------FOOTER SECTION--------------------------------*/
+#footer
+{
+  background-color: #fff;
+}
+footer i
+{
+  margin: 1%;
+  font-size: 30px;
+}
+.twit
+{
+  color: #1DA1F2;
+}
+.fb
+{
+  color: #4267B2;
+}
+.insta
+{
+  color: #F56040;
+}
+.email
+{
+  color: #EA4335;
+}
+.contact
+{
+  padding-top: 150px;
+}
+
+
+
+/*------------------------------------------GENERAL SECTION (refactoring)------------------------------------------*/
+.container-fluid
+{
+  padding: 7% 15%;
+}
+
+
+
+/*------------------------------------------MEDIA QUERY BREAKPOINTS------------------------------------------*/
+
+/* Όταν το μέγεθος της οθόνης γίνει <=1028px τότε η βασική μου εικόνα αντί να εξαφανίζεται πηγαίνοντας κάτω από τα κουμπιά
+θα πηγαίνει κάτω από τα κουμπιά και θα φαίνεται ολόκληρη. Αυτό το πετυχαίνω, γιατί ορίζω το position της static
+και έτσι αυτή επιστρέφει στην κανονική ροή της html (δηλαδή όλα αριστερά, το ένα κάτω από το άλλο) */
+@media (max-width: 1028px)
+{
+  #title
+  {
+    text-align: center;
+  }
+  .title-image
+  {
+    position: static;
+    transform: rotate(0deg);      /* Ισιώνω την εικόνα */
+  }
+}
